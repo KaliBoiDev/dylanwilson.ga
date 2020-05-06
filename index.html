@@ -3,7 +3,7 @@
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <link rel="stylesheet" href="/animate.css-master/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="isInViewport.js"></script>
+    <script src="isInViewport.jquery.json"></script>
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -103,11 +103,6 @@
   <script>
     alert("Disclaimer: This is probably incredibly cringey. Proceed at your own risk.");
   </script>
-  <script>
-    if (jQuery) {
-      alert("success");
-    }
-  </script>
   </head>
   <body>
     <div id="title">
@@ -127,8 +122,11 @@
       <div id="right-info">
         <img src="https://st3.depositphotos.com/1001033/16310/i/450/depositphotos_163100726-stock-photo-software-computer-programming-code.jpg" align="middle" />
       </div>
+      <script>
+        $( '#subtitle:in-viewport' ).addClass('animated rollIn');
+      </script>
     <div id="subtitle">
-      <p class="animated rollIn">What services do I offer?</p>
+      <p>What services do I offer?</p>
     </div>
     <div id="subinfo">
       <p>I have been programming and messing with computers since the third grade, and, in doing so, I have developed the unteachable skillset of problem solving, troubleshooting, and logical thinking.  My experience in this area allows me to move freely between many programming languages and pick up new skills I am unfamiliar with fairly quickly.  My strongsuits are HTML, C++, electronic engineering, and auditing security.  I am actively learning more about all of my skillsets so that I can better my final products.</p>
